@@ -172,7 +172,7 @@
 .rightColumn { position: sticky; top: 0; display: flex; height: 100dvh; min-height: 690px; flex-direction: column; gap: 13px; padding: 22px 17px 13px; border-left: 1px solid #eae8e0; background: #fdfcf8; }
 .rightHeader { display: flex; align-items: center; gap: 8px; color: #a1a398; font-size: 8px; font-weight: 800; letter-spacing: .12em; }
 .onlineDot { width: 6px; height: 6px; border-radius: 50%; background: #90a781; box-shadow: 0 0 0 3px #e9efe5; }
-.mascotCard { position: relative; min-height: 253px; overflow: hidden; border: 1px solid #ebeadf; border-radius: 13px; background: linear-gradient(154deg, #f1f1e6 0%, #e9efdf 55%, #e7eadc 100%); }
+.mascotCard { position: relative; min-height: 280px; overflow: hidden; border: 1px solid #ebeadf; border-radius: 13px; background: linear-gradient(154deg, #f1f1e6 0%, #e9efdf 55%, #e7eadc 100%); }
 .mascotBackdrop { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .mascotBackdrop::before { position: absolute; top: 23px; left: 50%; width: 152px; height: 152px; border: 1px solid #d6dccb; border-radius: 50%; content: ""; transform: translateX(-50%); }
 .mascotBackdrop::after { position: absolute; right: -10px; bottom: -60px; left: -10px; height: 116px; border-radius: 50% 50% 0 0; background: #dce4d5; content: ""; }
@@ -180,12 +180,12 @@
 .mascotStar { top: 49px; left: 30px; font-size: 17px; }
 .mascotStar2 { top: 92px; right: 28px; color: #91a080; font-size: 14px; }
 .mascotLeaf { bottom: 67px; left: 22px; color: #839a78; font-size: 19px; }
-.mascot { position: absolute; z-index: 2; bottom: 30px; left: 50%; width: 190px; height: 203px; object-fit: contain; object-position: bottom; transform: translateX(-50%); filter: drop-shadow(0 5px 5px #42563818); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.mascot { position: absolute; z-index: 2; bottom: 79px; left: 50%; width: 184px; height: 190px; object-fit: contain; object-position: bottom; transform: translateX(-50%); filter: drop-shadow(0 5px 5px #42563818); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
 .mascotCelebrate { animation: mascotCheer .6s cubic-bezier(.25,.85,.45,1.4) 2; }
 @keyframes mascotCheer { 0%, 100% { transform: translateX(-50%) translateY(0) rotate(0); } 30% { transform: translateX(-50%) translateY(-11px) rotate(-4deg); } 65% { transform: translateX(-50%) translateY(-6px) rotate(4deg); } }
-.mascotName { position: absolute; z-index: 3; bottom: 12px; left: 50%; display: inline-flex; align-items: center; gap: 5px; padding: 5px 8px; border: 1px solid #d9dfd0; border-radius: 8px; background: #f8f8f0eF; color: #728068; font-size: 7px; font-weight: 800; letter-spacing: .1em; white-space: nowrap; transform: translateX(-50%); }
+.mascotName { position: absolute; z-index: 3; bottom: 62px; left: 50%; display: inline-flex; align-items: center; gap: 5px; padding: 5px 8px; border: 1px solid #d9dfd0; border-radius: 8px; background: #f8f8f0eF; color: #728068; font-size: 7px; font-weight: 800; letter-spacing: .1em; white-space: nowrap; transform: translateX(-50%); }
 .mascotName > span { width: 5px; height: 5px; border-radius: 50%; background: #93a87e; }
-.speechBubble { position: relative; margin: 2px 2px 0; padding: 12px 13px; border: 1px solid #efeade; border-radius: 10px; background: #fffefa; }
+.speechBubble { position: absolute; z-index: 4; right: 10px; bottom: 8px; left: 10px; margin: 0; padding: 9px 13px; border: 1px solid #efeade; border-radius: 10px; background: #fffefa; }
 .speechBubble::before { position: absolute; top: -5px; left: calc(50% - 5px); width: 9px; height: 9px; border-top: 1px solid #efeade; border-left: 1px solid #efeade; background: #fffefa; content: ""; transform: rotate(45deg); }
 .speechBubble p { margin: 0; color: #8e9687; text-align: center; font-family: Georgia, serif; font-size: 11px; line-height: 1.5; }
 .speechBubble p strong { color: #50664e; font-weight: 600; }
@@ -325,8 +325,9 @@
   .streakNotice p { font-size: 8px; }
   .rightColumn { order: 2; grid-column: auto; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); padding: 15px 16px 19px; }
   .rightHeader { grid-column: 1 / -1; }
-  .mascotCard { grid-column: 1 / -1; min-height: 219px; }
-  .mascot { width: 175px; height: 177px; bottom: 28px; }
+  .mascotCard { grid-column: 1 / -1; min-height: 278px; }
+  .mascot { width: 176px; height: 182px; bottom: 78px; }
+  .mascotName { bottom: 62px; }
   .journeyCard { grid-column: 1 / -1; }
   .milestoneCard, .tipCard { min-width: 0; }
   .milestoneFooter { font-size: 7px; }
